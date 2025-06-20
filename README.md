@@ -48,12 +48,11 @@ Para visualizar o projeto em sua máquina, siga os passos abaixo:
 
 Gostou do que viu? Vamos nos conectar!
 
--   **LinkedIn:** `https://www.linkedin.com/in/seu-perfil`
--   **Portfólio:** `https://seu-portfolio.com`
--   **Email:** `seu.email@exemplo.com`
+-   **LinkedIn:** `https://www.linkedin.com/in/fernando-fullstackdev/`
+-   ** 61-993700437
+-   **Email:** `fernandolimadev17@gmail.com`
 
----
-*Este README foi elaborado para destacar as competências técnicas e a atenção aos detalhes no desenvolvimento do projeto TechPoint.*
+
 
 
 
