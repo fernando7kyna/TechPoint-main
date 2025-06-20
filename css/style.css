@@ -1,0 +1,561 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@700&display=swap');
+
+/*--------------------------------------------------------------
+# Configurações Globais e Reset
+--------------------------------------------------------------*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #9a4d99;
+    min-height: auto;
+    padding-top: 60px;
+    font-family: 'Lato', sans-serif;
+}
+
+/*--------------------------------------------------------------
+# Cabeçalho (Header) e Navegação
+--------------------------------------------------------------*/
+header {
+    background-color: #ffffff;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+    padding: 20px;
+    height: 100px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    align-items: center;
+}
+
+.nav {
+    text-align: end;
+}
+
+.nav ul li a {
+    padding: 10px 10px;
+    display: inline-block;
+    background-color: #370a44;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: 700;
+}
+
+.nav ul li {
+    display: inline;
+    margin: 5px;
+}
+
+.nav ul {
+    margin: 0;
+    list-style: none;
+}
+
+.nav a {
+    color: #e4e2e2;
+    font-size: 14px;
+}
+
+.nav ul li a:hover {
+    background-color: #9a4d99;
+    color: #ffffff;
+}
+
+.menu {
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: none;
+}
+
+/*--------------------------------------------------------------
+# Tipografia e Títulos
+--------------------------------------------------------------*/
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+h1 {
+    color: #370a44;
+    font-size: 30px;
+    margin: 5px;
+}
+
+/*--------------------------------------------------------------
+# Seção Home
+--------------------------------------------------------------*/
+#home-page {
+    background-color: #6a2285;
+    padding: 80px 50px;
+    display: flex;
+    justify-content: center;
+    min-height: calc(100vh - 100px);
+    align-items: center;
+}
+
+.container-info {
+    background-color: #ffffff;
+    width: auto;
+    margin: 30px;
+    max-width: 900px;
+    padding: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.text-content {
+    flex: 1;
+    padding-right: 30px;
+}
+
+.container-info h2 {
+    color: #330341;
+    font-size: 26px;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+}
+
+.container-info img {
+    width: 40%;
+    max-width: 350px;
+    border-radius: 15px;
+    object-fit: contain;
+    filter: drop-shadow(0 4px 8px rgba(0,0,0,0.15));
+}
+
+.container-info p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/*--------------------------------------------------------------
+# Seção Sobre Nós
+--------------------------------------------------------------*/
+#about-us {
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    padding: 80px 20px;
+}
+
+.about {
+    text-align: center;
+    margin: 30px;
+    padding: 20px;
+    max-width: 800px;
+}
+
+.about h3 {
+    color: #330341;
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.about p {
+    color: #330341;
+    font-weight: normal;
+    margin: 13px;
+    font-size: 17px;
+    line-height: 1.6;
+}
+
+/*--------------------------------------------------------------
+# Seção Planos
+--------------------------------------------------------------*/
+#plans {
+    background-color: #370a44;
+    padding: 80px 20px;
+}
+
+.our-plans h3 {
+    color: #ffffff;
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.itens {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding: 0 20px;
+}
+
+.item {
+    background-color: #ffffff;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 320px;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.itens h4 {
+    color: #330341;
+    font-size: 24px;
+    margin: 0 0 15px 0;
+    text-align: center;
+}
+
+.itens span {
+    color: #272029;
+    font-weight: bold;
+    font-size: 20px;
+    padding-left: 0;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.itens ul {
+    margin: 0 0 30px 0;
+    padding-left: 20px;
+    flex-grow: 1;
+}
+
+.itens li {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.itens button {
+    background: linear-gradient(45deg, #7b2ff7, #f107a3);
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    transition: 0.3s;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: auto;
+}
+
+.itens button:hover {
+    transform: scale(1.05);
+}
+
+/*--------------------------------------------------------------
+# Seção Contato e Rodapé
+--------------------------------------------------------------*/
+#contato {
+    background-color: #ffffff;
+    padding: 80px 20px;
+}
+
+#contato h3 {
+    color: #330341;
+    font-size: 28px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#contato p {
+    color: #330341;
+    font-size: 17px;
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto 30px;
+}
+
+.contact {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contact ul {
+    list-style: none;
+    padding: 0;
+}
+
+.contact li {
+    margin-bottom: 15px;
+    font-size: 16px;
+    color: #330341;
+}
+
+.contact a {
+    color: #6a2285;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact a:hover {
+    text-decoration: underline;
+}
+
+.contact-container a:hover {
+    text-decoration: underline;
+}
+
+/*--------------------------------------------------------------
+# Media Queries para Responsividade
+--------------------------------------------------------------*/
+/* Telas Maiores (ex: Desktops) - Nenhuma regra específica necessária, usa o padrão */
+
+/* Telas Médias (ex: Tablets) */
+@media (max-width: 992px) {
+    .container {
+        width: 95%;
+    }
+
+    .content {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .text-content {
+        padding-right: 0;
+        margin-bottom: 30px;
+    }
+
+    .container-info img {
+        margin: 0;
+        width: 70%;
+        max-width: 300px;
+    }
+
+    .itens {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Telas Pequenas (ex: Celulares em paisagem e Tablets em retrato) */
+@media (max-width: 768px) {
+    body {
+        padding-top: 80px;
+    }
+
+    header {
+        height: 80px;
+        padding: 10px;
+    }
+
+    .container {
+        position: relative;
+    }
+
+    .nav {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #ffffff;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        padding: 10px 0;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 0 0 10px 10px;
+    }
+
+    .nav.active {
+        display: flex;
+    }
+
+    .nav ul {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav ul li {
+        margin: 10px 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .menu {
+        display: block;
+        order: 3; /* Move o menu hamburguer para o final */
+    }
+
+    #theme-toggle {
+        order: 2; /* Move o botão de tema antes do hamburguer */
+    }
+
+    h1 {
+        order: 1;
+        font-size: 24px;
+        margin-right: auto; /* Empurra os botões para a direita */
+    }
+
+    body.dark-mode .nav {
+        background-color: #1f1f1f;
+    }
+}
+
+/* Telas Muito Pequenas (ex: Celulares em retrato) */
+@media (max-width: 480px) {
+    #home-page,
+    #about-us,
+    #plans,
+    #contato {
+        padding: 40px 15px;
+    }
+
+    .container-info {
+        padding: 20px;
+    }
+
+    .container-info h2 {
+        font-size: 20px;
+    }
+
+    .container-info p,
+    .about p,
+    .contact li {
+        font-size: 16px;
+    }
+
+    .about h3,
+    .our-plans h3,
+    #contato h3 {
+        font-size: 22px;
+    }
+
+    .item {
+        padding: 20px;
+    }
+}
+
+/*--------------------------------------------------------------
+# Botão de Alternância de Tema (Dark/Light Mode)
+--------------------------------------------------------------*/
+#theme-toggle {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    margin-left: 20px;
+    color: #370a44;
+}
+
+/*--------------------------------------------------------------
+# Estilos do Dark Mode
+--------------------------------------------------------------*/
+body.dark-mode {
+    background-color: #121212;
+    color: #e4e2e2;
+}
+
+body.dark-mode header {
+    background-color: #1f1f1f;
+    box-shadow: 0 2px 4px rgba(255, 255, 255, 0.1);
+}
+
+body.dark-mode h1 {
+    color: #e4e2e2;
+}
+
+body.dark-mode #theme-toggle {
+    color: #e4e2e2;
+}
+
+body.dark-mode .nav ul li a {
+    background-color: #333333;
+    color: #e4e2e2;
+}
+
+body.dark-mode .nav ul li a:hover {
+    background-color: #7b2ff7;
+}
+
+body.dark-mode #home-page {
+    background-color: #1a1a1a;
+}
+
+body.dark-mode .container-info {
+    background-color: #2a2a2a;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+}
+
+body.dark-mode .container-info h2,
+body.dark-mode .container-info p {
+    color: #e4e2e2;
+}
+
+body.dark-mode #about-us {
+    background-color: #1f1f1f;
+}
+
+body.dark-mode .about h3,
+body.dark-mode .about p {
+    color: #e4e2e2;
+}
+
+body.dark-mode #plans {
+    background-color: #121212;
+}
+
+body.dark-mode .our-plans h3 {
+    color: #ffffff;
+}
+
+body.dark-mode .item {
+    background-color: #2a2a2a;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+}
+
+body.dark-mode .item h4,
+body.dark-mode .item span,
+body.dark-mode .item li {
+    color: #e4e2e2;
+}
+
+body.dark-mode footer {
+    background-color: #1f1f1f;
+}
+
+body.dark-mode #contato h3,
+body.dark-mode #contato p,
+body.dark-mode .contact li {
+    color: #e4e2e2;
+}
+
+body.dark-mode .contact a {
+    color: #bb86fc;
+}
+
+body.dark-mode .about p {
+    color: #e4e2e2;
+}
+
+body.dark-mode #contato {
+    background-color: #1f1f1f;
+}
